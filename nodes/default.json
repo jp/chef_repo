@@ -1,0 +1,52 @@
+{
+  "run_list": [
+    "recipe[apt]",
+    "recipe[ohai]",
+    "recipe[build-essential]",
+    "recipe[openssl]",
+    "recipe[git]",
+    "recipe[users]",
+    "recipe[logrotate]",
+    "recipe[ruby_build]",
+//    "recipe[rbenv::rbenv_vars]",
+    "recipe[fail2ban]",
+    "recipe[postgresql::server]",
+    "recipe[postgresql::client]",
+    "recipe[nginx::http_gzip_static_module]",
+    "recipe[nginx::http_ssl_module]",
+    "recipe[nginx::source]"
+//    "recipe[redis::server]"
+   // "recipe[brandon::logrotate]" // Leave at end to ensure logfile in place
+  ],
+  "node_config": {
+  },
+  "rbenv": {
+    "user_installs": [
+      {
+        "user": "deployer",
+        "rubies": [
+          "2.0.0-p0"
+        ],
+        "global": "2.0.0-p0",
+        "gems": {
+          "2.0.0-p0": [
+            {
+              "name": "bundler"
+            },
+            {
+              "name": "rake"
+            },
+            {
+              "name": "awesome_print"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "postgresql": {
+    "password": {
+      "postgres": "iloverandompasswordsbutthiswilldo"
+    }
+  }
+}
