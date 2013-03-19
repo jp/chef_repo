@@ -48,5 +48,13 @@
     "password": {
       "postgres": "iloverandompasswordsbutthiswilldo"
     }
+  },
+  "nginx": {
+    "default_site_enabled": false,
+    "workers": 4,
+    "init_style": "init",
+    "source": {
+      "prefix": "/opt/nginx"
+    }
   }
 }
