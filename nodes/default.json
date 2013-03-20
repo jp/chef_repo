@@ -8,6 +8,8 @@
     "recipe[users]",
     "recipe[logrotate]",
     "recipe[ruby_build]",
+    "recipe[rbenv::default]",
+    "recipe[rbenv::ruby_build]",
 //    "recipe[rbenv::rbenv_vars]",
     "recipe[fail2ban]",
     "recipe[postgresql::server]",
@@ -23,6 +25,7 @@
   ],
   "node_config": {
   },
+  "username": "deployer",
   "rbenv": {
     "user_installs": [
       {
