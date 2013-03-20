@@ -6,6 +6,7 @@
     "recipe[openssl]",
     "recipe[git]",
     "recipe[users]",
+    "recipe[users::sysadmins]",
     "recipe[logrotate]",
     "recipe[ruby_build]",
     "recipe[rbenv::default]",
