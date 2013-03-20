@@ -14,7 +14,8 @@
     "recipe[postgresql::client]",
     "recipe[nginx::http_gzip_static_module]",
     "recipe[nginx::http_ssl_module]",
-    "recipe[nginx::source]"
+    "recipe[nginx::source]",
+    "recipe[julien]"
 //    "recipe[redis::server]"
    // "recipe[brandon::logrotate]" // Leave at end to ensure logfile in place
   ],

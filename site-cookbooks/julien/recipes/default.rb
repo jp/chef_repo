@@ -6,7 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-
+include_recipe "julien::firewall"
 
 user_account 'deployer' do
   # keys for file ~/.ssh/authorized keys
@@ -14,12 +14,12 @@ user_account 'deployer' do
 end
 
 group "admin" do
-  members ['brandon', 'deployer']
+  members ['julien', 'deployer']
   action :create
 end
 
 group "sudo" do
-  members ['brandon', 'deployer']
+  members ['julien', 'deployer']
   action :create
 end
 
