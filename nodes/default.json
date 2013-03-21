@@ -20,13 +20,21 @@
     "recipe[nginx::source]",
     "recipe[ufw]",
     "recipe[firewall]",    
-    "recipe[julien]"
+    "recipe[julien]",
+    "recipe[sudo]"
 //    "recipe[redis::server]"
    // "recipe[brandon::logrotate]" // Leave at end to ensure logfile in place
   ],
   "node_config": {
   },
   "username": "deployer",
+  "authorization": {
+    "sudo": {
+      "groups": ["admin", "sysadmin"],
+      "users": ["deployer"],
+      "passwordless": "true"
+    }
+  },  
   "rbenv": {
     "user_installs": [
       {
