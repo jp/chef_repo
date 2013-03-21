@@ -21,11 +21,11 @@
 #  gid     1000
 #end
 
-user("deployer") do
+user(node['username']) do
 	uid       1010
 	gid       1000
 	shell     "/bin/bash"
 	comment   "no comment"
-	home      "/home/deployer"
+	home      "/home/#{node['username']}"
   supports  :manage_home => true
 end
