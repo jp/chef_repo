@@ -30,3 +30,6 @@ cat ~/.ssh/id_rsa.pub | ssh vagrant@192.168.0.10 "cat >> ~/.ssh/authorized_keys;
 knife solo prepare vagrant@192.168.0.10
 
 knife solo cook vagrant@192.168.0.10 nodes/default.json
+
+# Issue with Postgres localization
+http://stackoverflow.com/questions/4929180/configuring-locales-on-linux-for-postgresql
