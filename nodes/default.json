@@ -53,7 +53,7 @@
   },
   "postgresql": {
     "config":{
-      "listen_address":"localhost"
+      "listen_addresses":"localhost"
       },
     "password": {
       "postgres": "iloverandompasswordsbutthiswilldo"
