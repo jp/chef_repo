@@ -21,7 +21,7 @@ Setup SSH on vragrant to use PK authentication
 cat ~/.ssh/id_rsa.pub | ssh vagrant@192.168.0.10 "cat >> ~/.ssh/authorized_keys; chmod 600 ~/.ssh/authorized_keys"
 ```
 
-Password is vagrant, see http://docs-v1.vagrantup.com/v1/docs/base_boxes.html
+Password is ```vagrant```, see http://docs-v1.vagrantup.com/v1/docs/base_boxes.html
 
 Setup chef locally and cook vagrant
 -----------------------------------
