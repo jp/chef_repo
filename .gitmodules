@@ -58,3 +58,9 @@
 [submodule "cookbooks/chef_handler"]
 	path = cookbooks/chef_handler
 	url = https://github.com/opscode-cookbooks/chef_handler
+[submodule "cookbooks/redisio"]
+	path = cookbooks/redisio
+	url = git@github.com:brianbianco/redisio.git
+[submodule "cookbooks/ulimit"]
+	path = cookbooks/ulimit
+	url = git@github.com:bmhatfield/chef-ulimit.git

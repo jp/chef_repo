@@ -19,8 +19,9 @@
     "recipe[firewall]",    
     "recipe[julien]",
     "recipe[rbenv::user]",
-    "recipe[sudo]"
-//    "recipe[redis::server]"
+    "recipe[sudo]",
+    "recipe[redisio::install]",
+    "recipe[redisio::enable]"
    // "recipe[brandon::logrotate]" // Leave at end to ensure logfile in place
   ],
   "node_config": {
