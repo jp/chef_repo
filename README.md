@@ -35,4 +35,6 @@ knife solo cook vagrant@192.168.0.10 nodes/default.json
 ```
 
 # Issue with Postgres localization
-http://stackoverflow.com/questions/4929180/configuring-locales-on-linux-for-postgresql
+Vagrant issue with posgresql
+
+http://www.softr.li/blog/2012/05/22/chef-recipe-to-install-a-postgresql-server-on-a-machine-configured-with-en_us-locales
